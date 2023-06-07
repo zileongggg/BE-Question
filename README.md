@@ -1,4 +1,4 @@
-Backend Code README
+README
 ===================
 
 This repository contains a simple backend code implemented using Python and Flask framework. The code includes two endpoints, `/endpoint1` and `/endpoint2`, which perform certain operations and return responses.
@@ -25,8 +25,7 @@ To start the backend server, execute the following command:
 
 This will start the Flask application, and the server will be accessible at `http://localhost:5000`.
 
----
-## Endpoint 1 - `/endpoint1`
+### Endpoint 1 - `/endpoint1`
 
 This endpoint performs the following steps:
 
@@ -34,7 +33,6 @@ This endpoint performs the following steps:
 2.  Generates a random 256-bit string and computes its SHA-256 hash using `hashlib.sha256`.
 3.  Returns the computed hash string as the response.
 
----
 ### Endpoint 2 - `/endpoint2`
 
 This endpoint performs an infinite loop and calls `/endpoint1` internally until a specific condition is met. The steps involved are as follows:
@@ -62,3 +60,4 @@ To perform the load testing, follow these steps:
 3. Open your browser and navigate to http://localhost:8089 to access the Locust web interface.
 4. Set the number of total users, spawn rate, and other parameters as desired.
 5. Click the "Start swarming" button to begin the load testing.
+6. Note that if you have problems running Locust, make sure the environment path is set.
